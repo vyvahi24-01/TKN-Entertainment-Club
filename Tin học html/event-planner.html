@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Nhóm tổ chức sự kiện</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://wallpapers.com/images/hd/confetti-background-bdwx9ura3bex2dk3.jpg');
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            padding: 50px 0;
+        }
+
+        /* Cuốn sổ tay mở ra */
+        .notebook {
+            width: 90%;
+            max-width: 950px;
+            background: #fff;
+            background-image: radial-gradient(#d1d1d1 1px, transparent 1px);
+            background-size: 20px 20px; /* Giấy chấm dot-grid */
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            min-height: 800px;
+            padding: 40px;
+            position: relative;
+            border-left: 20px solid #5d4037; /* Gáy sổ */
+        }
+
+        h1 { text-align: center; color: #d81b60; margin-bottom: 40px; text-decoration: underline; }
+        .sticky-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+       
+        .sticky-note {
+            padding: 20px;
+            width: 280px;
+            min-height: 200px;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+            position: relative;
+            transform: rotate(-1deg);
+            transition: 0.3s;
+        }
+        .sticky-note:hover { transform: scale(1.05) rotate(0deg); z-index: 10; }
+
+  
+        .note-yellow { background: #fff9c4; border-top: 15px solid #fbc02d; }
+        .note-pink { background: #fce4ec; border-top: 15px solid #f06292; transform: rotate(2deg); }
+        .note-blue { background: #e3f2fd; border-top: 15px solid #64b5f6; transform: rotate(-2deg); }
+        .note-green { background: #f1f8e9; border-top: 15px solid #8bc34a; width: 90%; }
+
+        .admin-avatar {
+            width: 70px; height: 70px;
+            border-radius: 50%;
+            float: left; margin-right: 15px;
+            border: 2px solid #fff;
+        }
+        .photo-clip {
+            background: #fff;
+            padding: 10px 10px 30px 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 80%;
+            margin: 30px auto;
+            position: relative;
+        }
+        .photo-clip::before { /* Ghim kẹp giấy */
+            content: '📎';
+            position: absolute;
+            top: -20px; left: 50%;
+            font-size: 30px;
+        }
+
+        .memberSlides { display: none; }
+        .m-prev, .m-next {
+            cursor: pointer; position: absolute; top: 45%; 
+            font-size: 30px; color: #d81b60; text-decoration: none;
+        }
+        .m-next { right: -40px; } .m-prev { left: -40px; }
+
+        .back-btn {
+            display: block; width: 150px; margin: 40px auto;
+            text-align: center; background: #5d4037; color: #fff;
+            padding: 10px; border-radius: 5px; text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="notebook">
+    <h1>🎀 NHÓM TỔ CHỨC SỰ KIỆN 🎀</h1>
+
+    <div class="sticky-container">
+        <div class="sticky-note note-yellow">
+            <img src="https://static.wikia.nocookie.net/id5/images/7/73/CheerleaderShopSprite.png/revision/latest?cb=20230907025141" class="admin-avatar">
+            <b>Admin Info:</b>
+            <p style="font-size: 0.9em;">Lily Barriere - Trưởng nhóm. <br>"Cùng nhau tạo nên kỷ niệm!"</p>
+        </div>
+
+        <div class="sticky-note note-pink">
+            <b>THÔNG TIN LIÊN LẠC:</b>
+            <ul style="font-size: 0.8em; padding-left: 20px;">
+                <li>&#128241; SĐT: 098x.xxx.xxx</li>
+                <li>&#128231; Mail: IDV@tkn_event</li>
+                 <li>🏠 Phòng: Đoàn trường</li>
+            </ul>
+        </div>
+
+        <div class="sticky-note note-green">
+<b>&#128197;Lịch hoạt động:</b>
+<b>Số lượng thành viên: 4/8</b> 
+<ul>
+<li> Thứ ba:4h-5h30</li>
+<li> Thứ năm:4h-5h30</li>
+<li> Thứ bảy:8h-9h30</li>
+</ul>
+            <b>To-do List:</b>
+            <p>✅ Halloween (Cuối tháng 10)</p>
+            <p>⏳ Sân chơi đầu tuần (16/2)</p>
+            <p>❌ Tiệc liên hoang cuối năm học (còn đang làm...)</p>
+        </div>
+    </div>
+
+    <div class="photo-clip">
+        <div class="memberSlides fade">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.RwRRXAIwhbnLXiXWRbhjwQHaEO?pid=Api&P=0&h=220" style="width:100%; height: 350px; object-fit: cover;">
+            <p style="text-align:center;"><i>Cuộc họp nhóm khá căng thẳng...</i></p>
+        </div>
+        <div class="memberSlides fade">
+            <img src="https://assets-global.website-files.com/56b2d0222988c4230fc7de41/622be8c3fb1922838a388a8f_025l6b7x36NROwcfO1R0Kth8v4Kgf8y93guQ-ndDs6gfd93kQJcbeGACmoPYN_HLr24DgazjD8tZbTelmmGsbaZ-cpU97jvOZBYRygNzU6l-8oAnZoC6vc2M5gmtdEEIwwWpFFYZ.jpeg" style="width:100%; height: 350px; object-fit: cover;">
+            <p style="text-align:center;"><i>Check-in sự kiện tháng 11</i></p>
+        </div>
+        <a class="m-prev" onclick="plusMemberSlides(-1)">❮</a>
+        <a class="m-next" onclick="plusMemberSlides(1)">❯</a>
+    </div>
+
+    <a href="index.html" class="back-btn">Đóng sổ lại để quay về trang chủ 📖</a>
+</div>
+
+<script>
+    let mSlideIndex = 1;
+    showMemberSlides(mSlideIndex);
+    function plusMemberSlides(n) { showMemberSlides(mSlideIndex += n); }
+    function showMemberSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("memberSlides");
+        if (n > slides.length) {mSlideIndex = 1}    
+        if (n < 1) {mSlideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
+        slides[mSlideIndex-1].style.display = "block";  
+    }
+</script>
+
+</body>
+</html>

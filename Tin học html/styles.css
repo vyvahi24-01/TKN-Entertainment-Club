@@ -1,0 +1,210 @@
+﻿.contact-footer {
+    margin-top: 40px; padding: 20px; background: #f1f1f1; border-top: 3px solid darkred; border-radius: 0 0 8px 8px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+}
+.contact-item h3 { color: darkred; margin-top: 0; }
+
+@media screen and (max-width: 800px) {
+    .wrapper { flex-direction: column; }
+    .sticky-sidebar { position: static; width: 100%; margin-right: 0; margin-bottom: 20px; }
+    .box, .contact-footer { grid-template-columns: 1fr; }
+    .main-nav { flex-direction: column; align-items: stretch; }
+}
+.title-bar-controls button {
+background:silver;
+box-shadow:inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+}
+
+.title-bar-controls button:not(:disabled):active {
+box-shadow:inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey;
+text-shadow:1px 1px #222;
+}
+
+@media (not(hover)){
+button:not(:disabled):hover {
+box-shadow:inset -1px -1px #fff,inset 1px 1px #0a0a0a,inset -2px -2px #dfdfdf,inset 2px 2px grey}
+}
+
+.title-bar-controls button:focus {
+outline:1px dotted #000;
+outline-offset:-4px;
+}
+
+.title-bar-controls button::-moz-focus-inner { border:0 }
+    
+@font-face {
+font-family: "Pixelated MS Sans Serif";
+src: url("https://files.catbox.moe/1za99g.woff") format("woff");
+src: url("https://files.catbox.moe/8fwbkl.woff2") format("woff2");
+font-weight: normal;
+font-style: normal;
+}   
+
+.window, .title-bar {
+font-family: "Pixelated MS Sans Serif", Arial;
+-webkit-font-smoothing: none;
+font-size: 11px;
+}
+
+.window {
+box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px #808080, inset 2px 2px #ffffff;
+background: #c0c0c0;
+color:#000;
+padding: 3px;
+width:100%;
+}
+
+.title-bar {
+background:linear-gradient(90deg, purple, orchid, pink);
+padding: 3px 2px 3px 3px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.title-bar-text {
+font-weight: bold;
+color: black;
+letter-spacing: 0;
+margin-right: 24px;
+}
+
+.title-bar-controls {
+display: flex;
+}
+
+.title-bar-controls button {
+padding: 0;
+display: block;
+min-width: 16px;
+min-height: 14px;
+}
+
+.title-bar-controls button:active {
+padding: 0;
+}
+
+.title-bar-controls button:focus {
+outline: none;
+}
+
+.title-bar-controls button[aria-label=Minimize]{
+background-image:url("https://raw.githubusercontent.com/jdan/98.css/main/icon/minimize.svg");
+background-position:bottom 3px left 4px;
+background-repeat:no-repeat
+}
+
+.title-bar-controls button[aria-label=Maximize]{
+background-image:url("https://raw.githubusercontent.com/jdan/98.css/4a2282dd9170cabf730fb5803d1153d86b2e94e3/icon/maximize.svg");
+background-position:top 2px left 3px;
+background-repeat:no-repeat;
+}
+
+.title-bar-controls button[aria-label=Close]{
+background-image:url("https://raw.githubusercontent.com/jdan/98.css/main/icon/close.svg");
+background-position:top 3px left 4px;
+background-repeat:no-repeat;
+margin-left:2px;
+}
+
+.window-body {
+margin: 8px;
+}
+
+/* literally only part ive custom coded so it scrolls . i also like the effect the fieldset adds */
+.fieldset {
+border:1px gray solid;
+box-shadow: white 1px 1px 0px inset, white 1px 1px 0px, white 0px 1px 0px, white 1px 0px 0px;
+margin:0;
+padding:10px;
+overflow-y:auto; 
+height: 190px;
+}
+img{
+width: 100%;
+max-width: 400px;
+object-fit: cover;
+vertical-align: middle;
+}
+pic_1,pic_2,pic_3,pic_4,nd_1,nd_2,nd_3,nd_4{
+border: 2px solid color none;
+}
+.box{
+max-width:1000px;
+margin: 20px auto;
+display: grid;
+}
+pic_1{
+grid-column:2;
+grid-row:1/2;
+}
+nd_1,nd_2,nd_3,nd_4{
+font-size: 1.5em;
+padding: 10px;
+}
+pic_1,pic_2,pic_3,pic_4{
+padding: 10px;
+}
+.main-container {
+        display: flex;
+        flex-direction: row; /* Hàng ngang */
+        gap: 20px;
+        max-width: 1240px;
+        margin: 20px auto;
+        padding: 0 15px;
+        align-items: flex-start;
+    }
+
+    /* Cột bên TRÁI: Thông tin dính cố định */
+    .left-sidebar {
+        flex: 1; /* Chiếm 1 phần độ rộng */
+        position: -webkit-sticky;
+        position: sticky;
+        top: 20px;
+        background: #c0c0c0;
+        padding: 15px;
+        border: 2px solid;
+        box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px #808080, inset 2px 2px #ffffff;
+        font-family: "Pixelated MS Sans Serif", Arial;
+        min-width: 250px; /* Độ rộng tối thiểu cho cột trái */
+    }
+
+    /* Cột bên PHẢI: Nội dung chính cuộn được */
+    .right-content {
+        flex: 3; /* Chiếm 3 phần độ rộng */
+        min-width: 0;
+    }
+}
+button
+
+{
+
+
+border-radius: 50px;
+
+
+border: 2px solid black;
+
+
+background-image: url('https://dl.glitter-graphics.com/pub/2742/2742919ox1upyz4sj.jpg');
+
+
+background-size: cover;
+
+
+font-family: pixel;
+
+
+font-size: 1.25em;
+
+
+color: white;
+
+
+width: 276px;
+
+
+margin-top: 10px;
+
+
+margin-left: 3px;

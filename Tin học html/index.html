@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CLB ngoại khoá trường THPT chuyên Thủ Khoa Nghĩa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="mystyle.css" rel="stylesheet" type="text/css">
+<style>
+body {
+    background-image: url("pic/home.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+{ box-sizing: border-box; }
+
+.wrapper {
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.sticky-sidebar {
+    flex: 0 0 280px;
+    position: sticky;
+    top: 20px;
+    background: #c0c0c0;
+    border: 2px solid;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px #808080, inset 2px 2px #ffffff;
+    padding: 15px;
+    margin-right: 20px;
+}
+
+.main-content {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    min-width: 0;
+}
+
+/* --- MỚI: CSS CHO NAVIGATION MENU --- */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding: 10px;
+    background: #f1f1f1;
+    border: 2px solid #888;
+    box-shadow: 3px 3px 0px #888;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 20px;
+    border: 1px solid #888;
+    background: #fff;
+    transition: 0.2s;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-item:hover {
+    background: darkred;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.nav-item.active {
+    background: darkred;
+    color: white;
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.nav-item.signup {
+    background: #ffd6a5; /* Màu nổi bật cho nút đăng ký */
+}
+
+.slideshow-container { max-width: 1000px; position: relative; margin: 20px auto; border: 5px solid #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+.mySlides { display: none; }
+.fade { animation-name: fade; animation-duration: 1.5s; }
+@keyframes fade { from {opacity: .4} to {opacity: 1} }
+
+.prev, .next {
+    cursor: pointer; position: absolute; top: 50%; width: auto; padding: 16px; margin-top: -22px;
+    color: white; font-weight: bold; font-size: 18px; background: rgba(0,0,0,0.3); border-radius: 50%;
+}
+.next { right: 10px; }
+.prev { left: 10px; }
+.banner {
+    background: url("https://truongchuyen.edu.vn/wp-content/uploads/2024/12/Truong-chuyen-Thu-Khoa-Nghia.jpg") no-repeat center center;
+    background-size: cover; padding: 10rem 0; text-align: center; color: darkred; margin-bottom: 20px;
+}
+.bg { background: #FE82B624; background-image:url(https://i.imgur.com/Wy0Pm6R.jpg); background-size:cover; padding:12px; border:1px solid black; margin: 20px 0; }
+.inner { background: #FFF; padding:15px; border:1px solid black; margin-bottom: 10px; }
+
+.box { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; }
+img { vertical-align: middle; width: 100%; border-radius: 4px; }
+
+</style>
+</head>
+<body>
+
+<div class="banner">
+    <h1 style="background: rgba(255,255,255,0.7); display: inline-block; padding: 10px 20px;">CLB ngoại khoá trường THPT chuyên Thủ Khoa Nghĩa</h1>
+</div>
+
+<div class="wrapper">
+    <div class="sticky-sidebar">
+        <div style="background: darkred; color: white; padding: 8px; font-weight: bold; text-align: center;">THÔNG TIN VỀ GIÁO VIÊN VÀ TRƯỞNG CLB</div>
+        <div style="background: white; border: 1px solid #888; padding: 10px; margin-top: 10px;">
+            <p><strong>Giáo viên phụ trách:</strong><br>Thầy/Cô Nguyễn Văn A</p>
+            <hr>
+            <p><strong>THÔNG TIN CỦA TRƯỞNG VÀ PHÓ CLB:</strong></p>
+            <ul style="padding-left: 20px;">
+                <li>Trần Thị B (Trưởng)</li>
+                <li>Lê Văn C (Phó)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <nav class="main-nav">
+            <a href="index.html" class="nav-item active">TRANG CHỦ</a>
+            <a href="credits.html" class="nav-item">CREDITS</a>
+            <a href="signup.html" class="nav-item signup">ĐĂNG KÝ</a>
+        </nav>
+
+        <h1 style="text-align:center; color: #2c3e50;">Học mà không chơi đánh rơi tuổi trẻ<br>Chơi mà không học bán rẻ tương lai</h1>
+        <hr>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="https://images.squarespace-cdn.com/content/v1/603897e6dd661d15f7003ebc/c9545de8-6fec-4ec0-a179-d87de5d3dc15/IMG_8879+(1).JPG">
+                <div style="text-align:center; padding: 10px; font-weight: bold;">1 / 4 Hoạt động vẽ tranh</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="https://tourtennessee.com/wp-content/uploads/shutterstock_student_musicians-1500x1000.jpg">
+                <div style="text-align:center; padding: 10px; font-weight: bold;">2 / 4 Hoạt động âm nhạc</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="https://snn-images.schoolnewsnetwork.org/wp-content/uploads/2020/05/26112714/GL-Esports-Team-1.jpg">
+                <div style="text-align:center; padding: 10px; font-weight: bold;">3 / 4 Hoạt động chơi Game</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="https://guilfordartcenter.org/wp-content/uploads/2024/02/Community-Art-Making.jpg">
+                <div style="text-align:center; padding: 10px; font-weight: bold;">4 / 4 Hoạt động Tổ chức Sự kiện</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+
+        <div class="bg">
+            <div class="inner">
+                <p style="font-size: 1.2em; margin: 0;">Câu lạc bộ giải trí là không gian năng động dành cho những người yêu thích sự sáng tạo và thư giãn sau những giờ học tập căng thẳng. Tại đây, các thành viên có cơ hội tham gia nhiều hoạt động hấp dẫn như âm nhạc, trò chơi, vẽ tranh và cùng nhau tổ chức những sự kiện thú vị của trường. Câu lạc bộ luôn khuyến khích tinh thần gắn kết, chia sẻ và phát triển kỹ năng cá nhân. Với môi trường thân thiện và cởi mở, mọi người đều có thể tự tin thể hiện bản thân. Câu lạc bộ giải trí không chỉ mang lại niềm vui mà còn giúp tạo nên những kỷ niệm đáng nhớ cho mỗi thành viên!</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <pic_1><img src="https://images.squarespace-cdn.com/content/v1/603897e6dd661d15f7003ebc/c9545de8-6fec-4ec0-a179-d87de5d3dc15/IMG_8879+(1).JPG"></pic_1>
+            <div class="inner">
+                <p>🎨 <b>Vẽ tranh:</b> Hoạt động vẽ tranh là hoạt động dành cho những bạn yêu thích hội họa và muốn thỏa sức sáng tạo. Tại đây, các thành viên được học hỏi kỹ năng vẽ, chia sẻ ý tưởng và cùng nhau tạo nên những tác phẩm đầy màu sắc. Câu lạc bộ cũng thường xuyên tổ chức các buổi sinh hoạt, triển lãm và hoạt động giao lưu bổ ích, giúp nuôi dưỡng niềm đam mê nghệ thuật.</p>
+                <br><a href="art.html" style="color: darkred; font-weight: bold;">[Bấm vào đây để xem xưởng vẽ]</a>
+            </div>
+
+            <pic_2><img src="https://tourtennessee.com/wp-content/uploads/shutterstock_student_musicians-1500x1000.jpg"></pic_2>
+            <div class="inner">
+                <p>🎶 <b>Âm nhạc:</b> Hoạt động âm nhạc của trường là nơi quy tụ những bạn trẻ có chung niềm đam mê với nhau.
+Tại đây, các thành viên được giao lưu, học hỏi và cùng nhau luyện tập ca hát, nhạc cụ cũng như biểu diễn.
+CLB không chỉ giúp phát triển năng khiếu âm nhạc mà còn là môi trường gắn kết, sáng tạo và đầy nhiệt huyết.
+Hãy tham gia để cùng nhau tạo nên những khoảnh khắc âm nhạc đáng nhớ nhé!&#127932.</p>
+                <br><a href="music.html" style="color: darkred; font-weight: bold;">[Ghé thăm phòng trà TKN]</a>
+            </div>
+
+            <pic_3><img src="https://snn-images.schoolnewsnetwork.org/wp-content/uploads/2020/05/26112714/GL-Esports-Team-1.jpg"></pic_3>
+            <div class="inner">
+                <p>🎮 <b>Chơi Game:</b> Hoạt động chơi Game của trường là sân chơi dành cho những bạn yêu thích giải trí và tư duy chiến thuật.
+CLB có hai hoạt động chính gồm Video Game sôi động và Board Game hấp dẫn, phù hợp với nhiều sở thích khác nhau.
+Tham gia CLB, các thành viên vừa được thư giãn sau giờ học vừa rèn luyện kỹ năng làm việc nhóm và tư duy logic.
+Hãy đến và cùng nhau tận hưởng những giờ phút chơi game vui vẻ, lành mạnh và đầy gắn kết!&#127918</p>
+                <br><a href="game.html" style="color: darkred; font-weight: bold;">[INSERT COIN TO START]</a>
+            </div>
+
+            <pic_4><img src="https://guilfordartcenter.org/wp-content/uploads/2024/02/Community-Art-Making.jpg"></pic_4>
+            <div class="inner">
+                <p>🎉 <b>Sự kiện:</b> Hoạt động Tổ chức Sự kiện của trường là nơi dành cho những bạn yêu thích sáng tạo và làm việc nhóm.
+CLB chuyên lên ý tưởng, lập kế hoạch và triển khai các hoạt động, chương trình lớn nhỏ trong trường.
+Tham gia CLB, các thành viên sẽ được rèn luyện kỹ năng tổ chức, giao tiếp và xử lý tình huống thực tế.
+Đây là môi trường năng động để bạn học hỏi, trải nghiệm và để lại dấu ấn qua từng sự kiện đáng nhớ!</p>
+                <br><a href="event-planner.html" style="color: darkred; font-weight: bold;">[XEM LỊCH TRÌNH]</a>
+            </div>
+        </div>
+
+        <div class="contact-footer">
+            <div class="contact-item">
+                <h3>📍 Địa chỉ</h3>
+                <p>Trường THPT chuyên Thủ Khoa Nghĩa, Châu Đốc, An Giang</p>
+            </div>
+            <div class="contact-item">
+                <h3>📞 Liên hệ</h3>
+                <p>Email: clb-tkn@gmail.com | Hotline: 090x xxx xxx</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) { showSlides(slideIndex += n); }
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
+    slides[slideIndex-1].style.display = "block";  
+}
+</script>
+</body>
+</html>

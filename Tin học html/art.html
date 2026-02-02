@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Góc Sáng Tạo TKN-Nhóm vẽ</title>
+    <style>
+        body {
+            background-image: url('pic/art.png');
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            padding: 40px 0;
+            margin: 0;
+        }
+
+        .art-container {
+            width: 95%;
+            max-width: 900px; 
+            background: white;
+            border: 12px solid #5d4037;
+            box-shadow: 8px 8px 0px #8d6e63;
+            padding: 25px;
+            position: relative;
+        }
+
+        /* --- KHUNG CHỨA 2 CỘT THÔNG TIN --- */
+        .header-info {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .admin-box {
+            flex: 2; 
+            display: flex;
+            background: #fff5f5;
+            border: 2px dashed #d84315;
+            padding: 15px;
+            align-items: center;
+            gap: 15px;
+        }
+        .contact-box {
+            flex: 1; 
+            background: #fdf2e9;
+            border: 2px solid #d84315;
+            padding: 15px;
+            font-size: 0.85em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .admin-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 2px solid #d84315;
+            object-fit: cover;
+        }
+
+        .admin-info h2 { margin: 0; font-size: 1.1em; color: #d84315; }
+        .admin-info p { margin: 3px 0; color: #555; }
+
+        .contact-box h3 { 
+            margin: 0 0 10px 0; 
+            font-size: 1em; 
+            text-align: center;
+            background: #d84315;
+            color: white;
+            padding: 2px;
+        }
+
+        /* Responsive cho điện thoại */
+        @media screen and (max-width: 600px) {
+            .header-info { flex-direction: column; }
+            .admin-box, .contact-box { width: 100%; }
+        }
+
+        /* CSS Nội dung cũ */
+        .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .art-card { border: 1px solid #ccc; padding: 10px; background: #fff; text-align: center; }
+        .art-card img { width: 100%; height: auto; }
+        .back-btn { display: inline-block; margin-top: 20px; padding: 8px 15px; background: #d84315; color: white; text-decoration: none; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+<div class="art-container">
+    <h1 style="text-align: center; color: #d84315; margin-top: 0;">🎨 Góc Sáng Tạo TKN-Nhóm vẽ</h1>
+
+    <div class="header-info">
+        <div class="admin-box">
+            <img src="https://static.wikia.nocookie.net/id5/images/b/b7/PainterShopSprite.png/revision/latest?cb=20240509162704" class="admin-avatar">
+            <div class="admin-info">
+                <h2>Edgar Valden</h2>
+                <p><i>Nhóm trưởng nhóm động Vẽ</i></p>
+                <p>"Vẽ cả thế giới bằng trái tim"</p>
+            </div>
+        </div>
+
+        <div class="contact-box">
+            <h3>THÔNG TIN LIÊN LẠC</h3>
+            <p><b>&#128231; Mail:</b> idv@art.com</p>
+            <p><b>&#128241; SĐT:</b> 090x.xxx.xxx</p>
+            <p><b>🏠 Phòng:</b> Phòng Mĩ Thuật</p>
+        </div>
+    </div>
+
+    <hr style="border: 1px solid #eee;">
+
+    <div class="club-content">
+        <p>Góc nhỏ dành cho những tâm hồn yêu hội họa...</p>
+        <div class="gallery">
+            <div class="art-card">
+                <img src="https://images.squarespace-cdn.com/content/v1/603897e6dd661d15f7003ebc/c9545de8-6fec-4ec0-a179-d87de5d3dc15/IMG_8879+(1).JPG">
+                <p><i>Ký họa chì</i></p>
+            </div>
+            <div class="art-card">
+                <img src="https://images.squarespace-cdn.com/content/v1/603897e6dd661d15f7003ebc/6e1315f8-f480-4ed0-85dc-1afd96e098b8/IMG_8730+(1).JPG">
+                <p><i>Màu nước</i></p>
+            </div>
+        </div>
+    </div>
+		    <div style="background: #fffbe6; padding: 15px; border-left: 5px solid #ffe58f; margin-top: 20px;">
+        <strong>&#128197;Lịch hoạt động:</strong>
+<p>Số lượng thành viên: 6/8</p> 
+<ul>
+<li> Thứ ba:4h-5h30</li>
+<li> Thứ năm:4h-5h30</li>
+<li> Thứ bảy:8h-9h30</li>
+</ul>
+<em>Lớp học màu nước sẽ diễn ra vào sáng thứ 7 tuần này tại phòng mỹ thuật. Đừng quên mang theo cọ nhé!</em>
+    </div>
+	<div style="margin-top: 40px; border-top: 2px solid #eee; padding-top: 20px;">
+    <h3 style="text-align: center; color: #d84315;">🖌️ GÓC TÁC PHẨM THÀNH VIÊN</h3>
+    
+    <div class="mini-slideshow-container">
+        <div class="memberSlides fade">
+            <img src="https://static.wikia.nocookie.net/id5/images/d/dc/2023_Global_Edgar_Bday.jpg/revision/latest/scale-to-width-down/1000?cb=20230423041243" style="width:100%; height: 300px; object-fit: cover; border: 5px solid #fff;">
+            <div class="caption">2023 Global Edgar Bday</div>
+        </div>
+
+        <div class="memberSlides fade">
+            <img src="https://static.wikia.nocookie.net/id5/images/3/37/Painterconceptsketch.jpg/revision/latest?cb=20200811072356" style="width:100%; height: 300px; object-fit: cover; border: 5px solid #fff;">
+            <div class="caption">Painterconceptsketch</div>
+        </div>
+
+        <div class="memberSlides fade">
+            <img src="https://static.wikia.nocookie.net/id5/images/c/c9/EdgarBirthday2022.jpg/revision/latest/scale-to-width-down/1000?cb=20220422161404" style="width:100%; height: 300px; object-fit: cover; border: 5px solid #fff;">
+            <div class="caption">EdgarBirthday2022</div>
+        </div>
+
+        <a class="m-prev" onclick="plusMemberSlides(-1)">❮</a>
+        <a class="m-next" onclick="plusMemberSlides(1)">❯</a>
+    </div>
+</div>
+
+<style>
+/* CSS CHO MINI SLIDESHOW */
+.mini-slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.memberSlides { display: none; text-align: center; }
+
+.caption {
+    padding: 10px;
+    color: #555;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.m-prev, .m-next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 10px;
+    color: #d84315;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    user-select: none;
+    text-decoration: none;
+}
+.m-next { right: -40px; }
+.m-prev { left: -40px; }
+
+.fade { animation: fadeAnim 1.5s; }
+@keyframes fadeAnim { from {opacity: .4} to {opacity: 1} }
+</style>
+
+<script>
+/* SCRIPT ĐIỀU KHIỂN MINI SLIDESHOW */
+let mSlideIndex = 1;
+showMemberSlides(mSlideIndex);
+
+function plusMemberSlides(n) {
+    showMemberSlides(mSlideIndex += n);
+}
+
+function showMemberSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("memberSlides");
+    if (n > slides.length) {mSlideIndex = 1}    
+    if (n < 1) {mSlideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slides[mSlideIndex-1].style.display = "block";  
+}
+</script>
+    <a href="index.html" class="back-btn">⬅ Quay lại trang chủ</a>
+</div>
+</body>
+</html>

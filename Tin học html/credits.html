@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Credits - Đội Ngũ Phát Triển TKN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f9;
+            background-image: radial-gradient(#d1d1d1 0.5px, #f4f4f9 0.5px);
+            background-size: 10px 10px;
+            font-family: 'Quicksand', sans-serif;
+            margin: 0; padding: 40px 20px;
+            display: flex; justify-content: center;
+        }
+
+        .credits-container {
+            width: 100%; max-width: 900px;
+            background: white;
+            border-radius: 25px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            padding: 40px;
+            border: 4px solid #2c3e50;
+        }
+
+        h1 { text-align: center; color: #2c3e50; font-size: 2.2em; margin-bottom: 40px; }
+
+        /* --- GRID THÀNH VIÊN --- */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .member-card {
+            background: #fff;
+            border: 2px solid #eee;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            transition: 0.3s;
+            position: relative;
+        }
+        .member-card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); border-color: #3498db; }
+
+        .avatar {
+            width: 100px; height: 100px;
+            border-radius: 50%;
+            border: 4px solid #3498db;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .role {
+            display: inline-block;
+            background: #e1f5fe;
+            color: #0288d1;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        /* --- THANH ĐÓNG GÓP --- */
+        .contribution-text { font-size: 0.85em; color: #666; margin-bottom: 5px; text-align: left; }
+        .progress-bar {
+            background: #eee;
+            height: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+        .progress-fill {
+            background: linear-gradient(90deg, #3498db, #2ecc71);
+            height: 100%;
+            border-radius: 5px;
+        }
+
+        /* --- THÔNG TIN THÊM --- */
+        .extra-info {
+            background: #fdf2e9;
+            border-left: 5px solid #e67e22;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .back-btn {
+            display: block; width: fit-content; margin: 30px auto 0;
+            padding: 12px 25px; background: #2c3e50; color: white;
+            text-decoration: none; border-radius: 10px; font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="credits-container">
+    <h1>🛠️ ĐỘI NGŨ SÁNG TẠO</h1>
+
+    <div class="team-grid">
+        <div class="member-card">
+            <img src="https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg" class="avatar">
+            <div class="role">Project Leader / UI Design</div>
+            <h3 style="margin: 5px 0;">Mỹ Anh</h3>
+            <div class="contribution-text">Mức độ đóng góp: 100%</div>
+            <div class="progress-bar"><div class="progress-fill" style="width: 100%;"></div></div>
+            <p style="font-size: 0.8em; color: #888;">"Chịu trách nhiệm ý tưởng và layout chính."</p>
+        </div>
+
+        <div class="member-card">
+            <img src="https://i.pinimg.com/736x/21/e2/28/21e2289c89498263300a7470650d5362.jpg" class="avatar">
+            <div class="role">Main Developer</div>
+            <h3 style="margin: 5px 0;">Anh Tuấn</h3>
+            <div class="contribution-text">Mức độ đóng góp: 90%</div>
+            <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+            <p style="font-size: 0.8em; color: #888;">"Hiện thực hóa code và các tính năng."</p>
+        </div>
+
+        <div class="member-card">
+            <img src="https://i.pinimg.com/736x/21/6e/f3/216ef352467f539b74070a2f90113c41.jpg" class="avatar">
+            <div class="role">Content Editor</div>
+            <h3 style="margin: 5px 0;">Hoàng Bảo</h3>
+            <div class="contribution-text">Mức độ đóng góp: 85%</div>
+            <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+            <p style="font-size: 0.8em; color: #888;">"Biên tập nội dung và chèn hình ảnh."</p>
+        </div>
+    </div>
+
+    <div class="extra-info">
+        <h4 style="margin-top: 0; color: #e67e22;">💌 Special Thanks</h4>
+        <p style="font-size: 0.9em; line-height: 1.6;">
+            Gửi lời cảm ơn chân thành đến <b>Trường THPT chuyên Thủ Khoa Nghĩa</b> đã tạo điều kiện cho chúng em phát triển dự án này. <br>
+            Cảm ơn cộng đồng <b>Neocities</b> đã truyền cảm hứng cho phong cách thiết kế retro này. <br>
+            Và cảm ơn <b>bạn</b> vì đã ghé thăm trang web của chúng mình!
+        </p>
+    </div>
+
+    <a href="index.html" class="back-btn">⬅ Quay lại Trang chủ</a>
+</div>
+
+</body>
+</html>

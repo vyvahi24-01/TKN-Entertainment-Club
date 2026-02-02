@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Gia Nhập Biệt Đội Giải Trí TKN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #ffecd2;
+            margin: 0; padding: 20px;
+            display: flex; justify-content: center; align-items: center;
+            min-height: 100vh;
+            font-family: 'Quicksand', sans-serif;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* --- NỀN ICON BAY (GIỮ NGUYÊN) --- */
+        .bg-elements {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1; pointer-events: none;
+        }
+        .floating-icon {
+            position: absolute; font-size: 30px; opacity: 0.4;
+            animation: float 10s infinite ease-in-out;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-40px) rotate(15deg); }
+        }
+
+        /* --- KHUNG ĐĂNG KÝ --- */
+        .signup-card {
+            background: rgba(255, 255, 255, 0.98);
+            width: 100%; max-width: 600px;
+            border-radius: 30px;
+            box-shadow: 0 20px 50px rgba(216, 67, 21, 0.2);
+            padding: 45px;
+            border: 8px solid #fff;
+            position: relative; /* Để 4 icon góc bám vào đây */
+            z-index: 10;
+        }
+
+        /* --- 4 EMOJI Ở 4 GÓC KHUNG (QUAY TRỞ LẠI VÀ LỢI HẠI HƠN) --- */
+        .corner-emoji {
+            position: absolute;
+            font-size: 50px;
+            filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.1));
+            z-index: 11;
+            animation: pulse 2s infinite alternate;
+        }
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.15); }
+        }
+
+        .top-left { top: -25px; left: -25px; }
+        .top-right { top: -25px; right: -25px; }
+        .bottom-left { bottom: -25px; left: -25px; }
+        .bottom-right { bottom: -25px; right: -25px; }
+
+        h2 { color: #ff4500; text-align: center; font-size: 2em; margin-bottom: 30px; }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; font-weight: bold; color: #5d4037; }
+
+        input, textarea, select {
+            width: 100%; padding: 12px; border: 2px solid #ffdbd0;
+            border-radius: 12px; font-family: inherit; outline: none;
+        }
+        input:focus { border-color: #ff4500; }
+
+/* Phần sở trường - Checkbox style vui nhộn */
+        .hobby-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .hobby-item {
+            background: #fff5f5;
+            padding: 10px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            border: 1px solid #ffdbd0;
+        }
+
+        .hobby-item:hover { background: #ffe0d8; 
+	}
+        .btn-submit {
+            width: 100%; padding: 18px; background: #ff4500;
+            color: white; border: none; border-radius: 15px;
+            font-size: 1.3em; font-weight: bold; cursor: pointer;
+            box-shadow: 0 6px 0px #b33000; margin-top: 10px;
+        }
+        .btn-submit:active { transform: translateY(4px); box-shadow: 0 2px 0px #b33000; }
+        .back-home { display: block; text-align: center; margin-top: 20px; color: #ff4500; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="bg-elements">
+        <div class="floating-icon" style="top: 10%; left: 3%; animation-duration: 8s;">🎨</div> 
+        <div class="floating-icon" style="top: 7%; right: 2%; animation-duration: 12s;">🎸</div> 
+        <div class="floating-icon" style="bottom: 24%; left: 10%; animation-duration: 7s;">🎮</div> 
+        <div class="floating-icon" style="bottom: 5%; right: 6%; animation-duration: 10s;">🎉</div> 
+        <div class="floating-icon" style="top: 50%; left: 2%; animation-duration: 15s;">🎈</div> 
+        <div class="floating-icon" style="top: 34%; left: 97%; animation-duration: 9s;">🎭</div> 
+        <div class="floating-icon" style="bottom: 8%; left: 20%; animation-duration: 13s;">🖌️</div> 
+        <div class="floating-icon" style="top: 22%; right: 90%; animation-duration: 6s;">🎷</div> 
+        <div class="floating-icon" style="bottom: 42%; right: 22%; animation-duration: 14s;">👾</div> 
+	<div class="floating-icon" style="top: 10%; left: 74%; animation-duration: 8s;">🎹</div> 
+        <div class="floating-icon" style="top: 20%; right: 12%; animation-duration: 12s;">📸</div> 
+        <div class="floating-icon" style="bottom: 15%; left: 76%; animation-duration: 7s;">✨</div> 
+        <div class="floating-icon" style="bottom: 5%; right: 63%; animation-duration: 10s;">🎧</div>
+        <div class="floating-icon" style="top: 62%; left: 19%; animation-duration: 15s;">🧩</div> 
+        <div class="floating-icon" style="bottom: 2%; left: 2%; animation-duration: 9s;">🎲</div> 
+        <div class="floating-icon" style="top: 8%; left: 15%; animation-duration: 13s;">🪩</div> 
+        <div class="floating-icon" style="top: 35%; right: 75%; animation-duration: 6s;">♟️</div> 
+        <div class="floating-icon" style="bottom: 29%; right: 6%; animation-duration: 14s;">🎶</div> 
+        <div class="floating-icon" style="top: 39%; left: 12%; animation-duration: 14s;">💿</div> 
+
+    </div>
+
+    <div class="signup-card">
+        <div class="corner-emoji top-left">🎨</div>
+        <div class="corner-emoji top-right">🎸</div>
+        <div class="corner-emoji bottom-left">🎮</div>
+        <div class="corner-emoji bottom-right">🎉</div>
+
+    <h2>🎟️ PHIẾU ĐĂNG KÝ THÀNH VIÊN</h2>
+
+    <form action="#" onsubmit="alert('Đăng ký thành công! Chào mừng bạn gia nhập biệt đội!'); return false;">
+        
+        <div class="form-group">
+            <label>👤 Họ và Tên:</label>
+            <input type="text" placeholder="Nhập tên của bạn..." required>
+        </div>
+
+        <div class="form-group">
+            <label>🏫 Lớp:</label>
+            <input type="text" placeholder="Ví dụ: 10 Văn, 11 Lý..." required>
+        </div>
+
+        <div class="form-group">
+            <label>🌟 Bạn muốn tỏa sáng ở lĩnh vực nào?</label>
+            <div class="hobby-grid">
+                <label class="hobby-item">
+                    <input type="checkbox" name="hobby"> 🎨 Vẽ tranh
+                </label>
+                <label class="hobby-item">
+                    <input type="checkbox" name="hobby"> 🎶 Âm nhạc
+                </label>
+                <label class="hobby-item">
+                    <input type="checkbox" name="hobby"> 🎮 Chơi Game
+                </label>
+                <label class="hobby-item">
+                    <input type="checkbox" name="hobby"> 🎉 Hoạt náo
+                </label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>💭 Tâm sự với bọn mình:</label>
+            <textarea rows="4" placeholder="Sở thích, sở ghét hoặc lí do bạn chọn clb của bọn mình..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">GỬI ĐƠN NGAY! 🚀</button>
+        
+        <a href="index.html" class="back-home">Để mình suy nghĩ thêm... Quay lại trang chủ</a>
+    </form>
+    </div>
+
+</body>
+</html>
